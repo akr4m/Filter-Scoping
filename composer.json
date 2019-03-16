@@ -1,0 +1,27 @@
+{
+    "name": "akr4m/scoping",
+    "description": "This scopes allow you to add constraints to all queries for a given model. Filter your data easily.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "akr4m",
+            "email": "akr4m.kh@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "akr4m\\scoping\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "akr4m\\scoping\\ScopingServiceProvider"
+            ]
+        }
+    },
+    "require": {},
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
