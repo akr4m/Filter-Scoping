@@ -2,6 +2,7 @@
 
 namespace akr4m\scoping\Scoping;
 
+use Illuminate\Support\Arr;
 use Illuminate\Http\Request;
 use akr4m\scoping\Scoping\Contracts\Scope;
 use Illuminate\Database\Eloquent\Builder;
@@ -30,7 +31,7 @@ class Scoper
 
     protected function limitScopes(array $scopes)
     {
-        return array_only(
+        return Arr::only()(
             $scopes,
             array_keys($this->request->all())
         );
