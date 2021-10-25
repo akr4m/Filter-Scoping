@@ -31,7 +31,7 @@ class Scoper
 
     protected function limitScopes(array $scopes)
     {
-        return Arr::only()(
+        return Arr::only(
             $scopes,
             array_keys($this->request->all())
         );
